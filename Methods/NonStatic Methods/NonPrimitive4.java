@@ -1,0 +1,21 @@
+class Demo
+{
+	int a=100;
+	void test1()
+	{
+		System.out.println("Inside Test1 Method" +a);
+	}
+}
+class Sample
+{
+	static Demo ref=new Demo();
+}
+class NonPrimitive4
+{
+	public static void main(String args[])
+	{
+		System.out.println("Start @ cyber Success");
+		Sample.ref.test1();
+		System.out.println("Stop @ cyber Success");
+	}
+}

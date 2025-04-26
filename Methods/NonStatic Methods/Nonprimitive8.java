@@ -1,0 +1,21 @@
+class Demo
+{
+	int a=100; 
+	void m1()
+	{
+		System.out.println(" Inside m1 method " +a);
+	}
+}
+class Nonprimitive8
+{ 
+	Demo retval;
+	public static void main(String args[])
+	{
+		System.out.println("Start");
+		Nonprimitive8 refvar=new Nonprimitive8();
+		refvar.retval=new Demo();
+		refvar.retval.m1();
+		System.out.println("Stop");
+	}
+
+}

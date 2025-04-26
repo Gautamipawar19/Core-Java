@@ -1,0 +1,32 @@
+class A
+{
+	int a=100;
+	int m1()
+	{
+		return a;
+	}
+}
+class B 
+{
+	float b=200.5f;
+	float m2()
+	{
+		return b;
+	}
+}
+class Nonprimitive10
+{
+	A ref1;
+	B ref2;
+	public static void main(String ags[])
+	{
+		System.out.println("Start");
+		Nonprimitive10 refvar=new Nonprimitive10();
+		refvar.ref1=new A();
+		int var1=refvar.ref1.m1();
+		refvar.ref2=new B();
+		float var2=refvar.ref2.m2();
+		System.out.println(var1 + var2);
+		System.out.println("Stop");
+	}
+}
